@@ -1,5 +1,197 @@
 [
   {
+    "schoolyear": "2024-2025",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "zuid",
+    "start": "2024-10-19",
+    "end": "2024-10-27"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2024-10-26",
+    "end": "2024-11-03"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2024-10-26",
+    "end": "2024-11-03"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Kerstvakantie",
+    "fixed": true,
+    "region": "heel nederland",
+    "start": "2024-12-21",
+    "end": "2025-01-05"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2025-02-15",
+    "end": "2025-02-23"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2025-02-22",
+    "end": "2025-03-02"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "zuid",
+    "start": "2025-02-22",
+    "end": "2025-03-02"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Meivakantie",
+    "fixed": true,
+    "region": "heel nederland",
+    "start": "2025-04-26",
+    "end": "2025-05-04"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "zuid",
+    "start": "2025-07-05",
+    "end": "2025-08-17"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "noord",
+    "start": "2025-07-12",
+    "end": "2025-08-24"
+  },
+  {
+    "schoolyear": "2024-2025",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "midden",
+    "start": "2025-07-19",
+    "end": "2025-08-31"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "zuid",
+    "start": "2025-10-11",
+    "end": "2025-10-19"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2025-10-18",
+    "end": "2025-10-26"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2025-10-18",
+    "end": "2025-10-26"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Kerstvakantie",
+    "fixed": true,
+    "region": "heel nederland",
+    "start": "2025-12-20",
+    "end": "2026-01-04"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2026-02-14",
+    "end": "2026-02-22"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "zuid",
+    "start": "2026-02-14",
+    "end": "2026-02-22"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2026-02-21",
+    "end": "2026-03-01"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Meivakantie",
+    "fixed": false,
+    "region": "heel nederland",
+    "start": "2026-04-25",
+    "end": "2026-05-03"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "noord",
+    "start": "2026-07-04",
+    "end": "2026-08-16"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "zuid",
+    "start": "2026-07-11",
+    "end": "2026-08-23"
+  },
+  {
+    "schoolyear": "2025-2026",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "midden",
+    "start": "2026-07-18",
+    "end": "2026-08-30"
+  },
+  {
+    "schoolyear": "2026-2027",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2026-10-10",
+    "end": "2026-10-18"
+  },
+  {
+    "schoolyear": "2026-2027",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2026-10-17",
+    "end": "2026-10-25"
+  },
+  {
     "schoolyear": "2026-2027",
     "name": "Herfstvakantie",
     "fixed": false,
@@ -25,6 +217,22 @@
   },
   {
     "schoolyear": "2026-2027",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2027-02-20",
+    "end": "2027-02-28"
+  },
+  {
+    "schoolyear": "2026-2027",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2027-02-20",
+    "end": "2027-02-28"
+  },
+  {
+    "schoolyear": "2026-2027",
     "name": "Meivakantie",
     "fixed": false,
     "region": "heel nederland",
@@ -35,9 +243,41 @@
     "schoolyear": "2026-2027",
     "name": "Zomervakantie",
     "fixed": true,
+    "region": "noord",
+    "start": "2027-07-10",
+    "end": "2027-08-22"
+  },
+  {
+    "schoolyear": "2026-2027",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "midden",
+    "start": "2027-07-17",
+    "end": "2027-08-29"
+  },
+  {
+    "schoolyear": "2026-2027",
+    "name": "Zomervakantie",
+    "fixed": true,
     "region": "zuid",
     "start": "2027-07-24",
     "end": "2027-09-05"
+  },
+  {
+    "schoolyear": "2027-2028",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2027-10-16",
+    "end": "2027-10-24"
+  },
+  {
+    "schoolyear": "2027-2028",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2027-10-16",
+    "end": "2027-10-24"
   },
   {
     "schoolyear": "2027-2028",
@@ -59,6 +299,22 @@
     "schoolyear": "2027-2028",
     "name": "Voorjaarsvakantie",
     "fixed": false,
+    "region": "noord",
+    "start": "2028-02-19",
+    "end": "2028-02-27"
+  },
+  {
+    "schoolyear": "2027-2028",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2028-02-26",
+    "end": "2028-03-05"
+  },
+  {
+    "schoolyear": "2027-2028",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
     "region": "zuid",
     "start": "2028-02-26",
     "end": "2028-03-05"
@@ -75,9 +331,41 @@
     "schoolyear": "2027-2028",
     "name": "Zomervakantie",
     "fixed": true,
+    "region": "midden",
+    "start": "2028-07-08",
+    "end": "2028-08-20"
+  },
+  {
+    "schoolyear": "2027-2028",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "noord",
+    "start": "2028-07-15",
+    "end": "2028-08-27"
+  },
+  {
+    "schoolyear": "2027-2028",
+    "name": "Zomervakantie",
+    "fixed": true,
     "region": "zuid",
     "start": "2028-07-22",
     "end": "2028-09-03"
+  },
+  {
+    "schoolyear": "2028-2029",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2028-10-14",
+    "end": "2028-10-22"
+  },
+  {
+    "schoolyear": "2028-2029",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2028-10-21",
+    "end": "2028-10-29"
   },
   {
     "schoolyear": "2028-2029",
@@ -105,6 +393,22 @@
   },
   {
     "schoolyear": "2028-2029",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2029-02-17",
+    "end": "2029-02-25"
+  },
+  {
+    "schoolyear": "2028-2029",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2029-02-17",
+    "end": "2029-02-25"
+  },
+  {
+    "schoolyear": "2028-2029",
     "name": "Meivakantie",
     "fixed": false,
     "region": "heel nederland",
@@ -115,9 +419,25 @@
     "schoolyear": "2028-2029",
     "name": "Zomervakantie",
     "fixed": true,
+    "region": "midden",
+    "start": "2029-07-07",
+    "end": "2029-08-19"
+  },
+  {
+    "schoolyear": "2028-2029",
+    "name": "Zomervakantie",
+    "fixed": true,
     "region": "zuid",
     "start": "2029-07-14",
     "end": "2029-08-26"
+  },
+  {
+    "schoolyear": "2028-2029",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "noord",
+    "start": "2029-07-21",
+    "end": "2029-09-02"
   },
   {
     "schoolyear": "2029-2030",
@@ -129,11 +449,43 @@
   },
   {
     "schoolyear": "2029-2030",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2029-10-20",
+    "end": "2029-10-28"
+  },
+  {
+    "schoolyear": "2029-2030",
+    "name": "Herfstvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2029-10-20",
+    "end": "2029-10-28"
+  },
+  {
+    "schoolyear": "2029-2030",
     "name": "Kerstvakantie",
     "fixed": true,
     "region": "heel nederland",
     "start": "2029-12-22",
     "end": "2030-01-06"
+  },
+  {
+    "schoolyear": "2029-2030",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "noord",
+    "start": "2030-02-16",
+    "end": "2030-02-24"
+  },
+  {
+    "schoolyear": "2029-2030",
+    "name": "Voorjaarsvakantie",
+    "fixed": false,
+    "region": "midden",
+    "start": "2030-02-23",
+    "end": "2030-03-03"
   },
   {
     "schoolyear": "2029-2030",
@@ -158,5 +510,21 @@
     "region": "zuid",
     "start": "2030-07-06",
     "end": "2030-08-18"
+  },
+  {
+    "schoolyear": "2029-2030",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "midden",
+    "start": "2030-07-13",
+    "end": "2030-08-25"
+  },
+  {
+    "schoolyear": "2029-2030",
+    "name": "Zomervakantie",
+    "fixed": true,
+    "region": "noord",
+    "start": "2030-07-20",
+    "end": "2030-09-01"
   }
 ]
