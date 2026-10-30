@@ -18,11 +18,12 @@ The holidays are calculated for the previous year through ten years ahead, so th
 
 ## How it updates
 
-`.github/workflows/publish.yml` runs every Monday, on every push to `main`, and when started by hand. Each run does three things:
+`.github/workflows/publish.yml` runs on the 1st of every month, on every push to `main`, and when started by hand. Each run does four things:
 
 1. Runs `generate.py`, which uses only the Python standard library.
-2. Commits the school-vacation cache when the data has changed. If nothing has been committed for 50 days it adds an empty keepalive commit instead, because GitHub turns off scheduled workflows after 60 days without activity.
+2. Commits the school-vacation cache, but only when the data has changed. That's usually once a year, when a new school year is published.
 3. Deploys `public/` to GitHub Pages.
+4. Calls GitHub's "enable workflow" API on itself. GitHub turns off scheduled workflows in public repos after 60 days without activity, and this call resets that counter, so no keepalive commits are needed. GitHub doesn't document this behaviour. If the workflow is ever switched off anyway, re-enable it from the Actions tab.
 
 Proton picks up changes from subscribed calendars every 8 to 16 hours.
 

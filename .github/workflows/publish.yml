@@ -4,13 +4,11 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "23 4 * * 1"   # every Monday 04:23 UTC
+    - cron: "23 4 1 * *"   # 1st of every month, 04:23 UTC
   workflow_dispatch:
 
 permissions:
-  contents: write   # commit refreshed school-vacation cache / keepalive
-  pages: write
-  id-token: write
+  contents: read
 
 concurrency:
   group: pages
@@ -19,28 +17,22 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # commit the refreshed school-vacation cache
+      pages: write
     steps:
       - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
 
       - name: Generate .ics feeds
         run: python3 generate.py --out public
 
-      # Commit the refreshed Rijksoverheid cache when it changed. If nothing was
-      # committed for ~50 days, push an empty commit so GitHub doesn't disable
-      # this scheduled workflow (it does that after 60 days without activity).
-      - name: Commit cache / keepalive
-        if: github.event_name != 'pull_request'
+      - name: Commit school-vacation cache if it changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if ! git diff --quiet -- data/; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/
             git commit -m "Update school vacation cache from Rijksoverheid"
-            git push
-          elif [ $(( $(date +%s) - $(git log -1 --format=%ct) )) -gt $(( 50 * 86400 )) ]; then
-            git commit --allow-empty -m "Keepalive for scheduled workflow"
             git push
           fi
 
@@ -53,9 +45,25 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  # GitHub disables scheduled workflows in public repos after 60 days without
+  # activity. Calling the "enable workflow" API on an already-enabled workflow
+  # resets that counter, so no keepalive commits are needed.
+  keepalive:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Reset the 60-day inactivity timer
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/publish.yml/enable"
