@@ -206,7 +206,11 @@ def schoolvakanties(rows: list[dict], region: str) -> list[tuple]:
                 desc += (f" Let op: carnaval valt dit jaar op {fmt(c_start)} t/m {fmt(c_end)};"
                          " scholen in Zuid kunnen daarom andere data kiezen.")
         desc += f" Schooljaar {r['schoolyear']}."
-        events.append((start, end, f"{r['name']} ({region.capitalize()})", desc))
+        # "Herfstvakantie" -> "Schoolvakantie: herfst (Zuid)"
+        name = r["name"]
+        season = name[: -len("vakantie")].lower() if name.lower().endswith("vakantie") else name
+        season = {"voorjaars": "voorjaar"}.get(season, season)
+        events.append((start, end, f"Schoolvakantie: {season} ({region.capitalize()})", desc))
     return events
 
 
